@@ -7,6 +7,8 @@ Built for designers who need to quickly evaluate typeface options against real b
 
 **Live demo → [fontcompare-peach.vercel.app](https://fontcompare-peach.vercel.app)**
 
+![fontcompare screenshot](public/screenshot.png)
+
 ---
 
 ## Features
