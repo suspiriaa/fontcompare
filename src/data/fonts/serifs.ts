@@ -1,0 +1,583 @@
+import { FontConfig } from '../../types';
+
+// ══════════════════════════════════════════════════════════
+//  DISPLAY SERIF — High-contrast, elegant, luxury
+// ══════════════════════════════════════════════════════════
+export const DISPLAY_SERIF: FontConfig[] = [
+  {
+    id: 'playfair-display', name: 'Playfair Display', family: 'Playfair Display', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Playfair+Display:wght@400;500;600;700;800;900',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800, 900],
+    description: 'Classic and sophisticated — editorial, premium elegance',
+    pairedWith: ['source-sans-3', 'inter', 'dm-sans'],
+  },
+  {
+    id: 'cormorant-garamond', name: 'Cormorant Garamond', family: 'Cormorant Garamond', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Cormorant+Garamond:wght@300;400;500;600;700',
+    previewWeight: 600, weights: [300, 400, 500, 600, 700],
+    description: 'Refined and delicate — high-fashion, luxury positioning',
+    pairedWith: ['raleway', 'mulish', 'urbanist'],
+  },
+  {
+    id: 'cormorant', name: 'Cormorant', family: 'Cormorant', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Cormorant:wght@300;400;500;600;700',
+    previewWeight: 600, weights: [300, 400, 500, 600, 700],
+    description: 'Display sibling of Cormorant Garamond — more expressive, dramatic contrast',
+  },
+  {
+    id: 'libre-baskerville', name: 'Libre Baskerville', family: 'Libre Baskerville', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Libre+Baskerville:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Classic Baskerville revival — authoritative, trustworthy, editorial',
+    pairedWith: ['source-sans-3', 'work-sans'],
+  },
+  {
+    id: 'eb-garamond', name: 'EB Garamond', family: 'EB Garamond', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'EB+Garamond:wght@400;500;600;700;800',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800],
+    description: 'Classic Garamond revival — timeless, literary, sophisticated',
+    pairedWith: ['raleway', 'montserrat'],
+  },
+  {
+    id: 'dm-serif-display', name: 'DM Serif Display', family: 'DM Serif Display', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'DM+Serif+Display',
+    previewWeight: 400, weights: [400],
+    description: 'Display companion to DM Sans — high contrast, editorial impact',
+    pairedWith: ['dm-sans', 'manrope'],
+  },
+  {
+    id: 'bodoni-moda', name: 'Bodoni Moda', family: 'Bodoni Moda', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Bodoni+Moda:wght@400;500;600;700;800;900',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800, 900],
+    description: 'Didone revival — extreme contrast, ultra-luxury fashion aesthetic',
+  },
+  {
+    id: 'baskervville', name: 'Baskervville', family: 'Baskervville', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Baskervville:wght@400;700',
+    previewWeight: 400, weights: [400, 700],
+    description: 'Faithful Baskerville revival — classic, balanced, editorial',
+  },
+  {
+    id: 'frank-ruhl-libre', name: 'Frank Ruhl Libre', family: 'Frank Ruhl Libre', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [300, 400, 500, 600, 700, 800, 900],
+    description: 'Hebrew-influenced — authoritative, editorial, beautiful contrast',
+  },
+  {
+    id: 'cardo', name: 'Cardo', family: 'Cardo', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Cardo:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Scholarly oldstyle — academic elegance, humanist proportions',
+  },
+  {
+    id: 'spectral', name: 'Spectral', family: 'Spectral', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Spectral:wght@200;300;400;500;600;700;800',
+    previewWeight: 700, weights: [200, 300, 400, 500, 600, 700, 800],
+    description: 'Screen-optimized text serif — elegant at display, readable at text',
+  },
+  {
+    id: 'abril-fatface', name: 'Abril Fatface', family: 'Abril Fatface', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Abril+Fatface',
+    previewWeight: 400, weights: [400],
+    description: 'Ultra-bold display — maximum visual impact, editorial drama',
+  },
+  {
+    id: 'cinzel', name: 'Cinzel', family: 'Cinzel', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Cinzel:wght@400;500;600;700;800;900',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800, 900],
+    description: 'Classical Roman capitals — timeless, monumental, authoritative',
+  },
+  {
+    id: 'poiret-one', name: 'Poiret One', family: 'Poiret One', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Poiret+One',
+    previewWeight: 400, weights: [400],
+    description: 'Art Deco geometric serif — elegant, feminine, vintage luxury',
+  },
+  {
+    id: 'italiana', name: 'Italiana', family: 'Italiana', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Italiana',
+    previewWeight: 400, weights: [400],
+    description: 'High-contrast display serif — Italian craftsmanship, elegant presence',
+  },
+  // ── New additions ──
+  {
+    id: 'yeseva-one', name: 'Yeseva One', family: 'Yeseva One', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Yeseva+One',
+    previewWeight: 400, weights: [400],
+    description: 'Cyrillic-influenced display — elegant, expressive, strong personality',
+  },
+  {
+    id: 'vidaloka', name: 'Vidaloka', family: 'Vidaloka', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Vidaloka',
+    previewWeight: 400, weights: [400],
+    description: 'Ultra-high contrast display — dramatic, feminine, luxury editorial',
+  },
+  {
+    id: 'unna', name: 'Unna', family: 'Unna', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Unna:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Elegant Didone-influenced — classic editorial, magazine heritage',
+  },
+  {
+    id: 'oranienbaum', name: 'Oranienbaum', family: 'Oranienbaum', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Oranienbaum',
+    previewWeight: 400, weights: [400],
+    description: 'Oldstyle transitional — refined historical character, editorial precision',
+  },
+  {
+    id: 'brygada-1918', name: 'Brygada 1918', family: 'Brygada 1918', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Brygada+1918:wght@400;500;600;700',
+    previewWeight: 700, weights: [400, 500, 600, 700],
+    description: 'Revival of a 1918 Polish typeface — historical, authoritative, editorial',
+  },
+  {
+    id: 'sorts-mill-goudy', name: 'Sorts Mill Goudy', family: 'Sorts Mill Goudy', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Sorts+Mill+Goudy',
+    previewWeight: 400, weights: [400],
+    description: 'Goudy Oldstyle revival — classical American book type, warm elegance',
+  },
+  {
+    id: 'prata', name: 'Prata', family: 'Prata', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Prata',
+    previewWeight: 400, weights: [400],
+    description: 'Elegant high-contrast display — neoclassical, refined, luxury editorial',
+  },
+  {
+    id: 'philosopher', name: 'Philosopher', family: 'Philosopher', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Philosopher:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Transitional serif with calligraphic sensibility — classical, distinguished',
+  },
+  {
+    id: 'ovo', name: 'Ovo', family: 'Ovo', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Ovo',
+    previewWeight: 400, weights: [400],
+    description: 'Light Didone-influenced display — delicate, fashion-conscious, ultra-feminine',
+  },
+  {
+    id: 'noto-serif-display', name: 'Noto Serif Display', family: 'Noto Serif Display', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Noto+Serif+Display:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Universal display serif — global script support, optical display optimized',
+  },
+  {
+    id: 'playfair-display-sc', name: 'Playfair Display SC', family: 'Playfair Display SC', category: 'serif', source: 'google',
+    group: 'display-serif',
+    googleFamily: 'Playfair+Display+SC:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Small caps variant of Playfair Display — monumental, engraved, premium editorial',
+  },
+];
+
+// ══════════════════════════════════════════════════════════
+//  TEXT SERIF — Readable, literary, trustworthy
+// ══════════════════════════════════════════════════════════
+export const TEXT_SERIF: FontConfig[] = [
+  {
+    id: 'lora', name: 'Lora', family: 'Lora', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Lora:wght@400;500;600;700',
+    previewWeight: 700, weights: [400, 500, 600, 700],
+    description: 'Contemporary modulated serif — balanced, warm, excellent body text',
+    pairedWith: ['nunito', 'source-sans-3', 'raleway'],
+  },
+  {
+    id: 'merriweather', name: 'Merriweather', family: 'Merriweather', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Merriweather:wght@300;400;700;900',
+    previewWeight: 700, weights: [300, 400, 700, 900],
+    description: 'Designed for screen readability — sturdy, traditional, highly legible',
+    pairedWith: ['raleway', 'open-sans', 'lato'],
+  },
+  {
+    id: 'vollkorn', name: 'Vollkorn', family: 'Vollkorn', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Vollkorn:wght@400;500;600;700;800;900',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800, 900],
+    description: 'Robust text serif — sturdy, no-nonsense, highly readable',
+    pairedWith: ['alegreya-sans', 'nunito-sans', 'cabin'],
+  },
+  {
+    id: 'alegreya', name: 'Alegreya', family: 'Alegreya', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Alegreya:wght@400;500;600;700;800;900',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800, 900],
+    description: 'Award-winning — literary warmth, dynamic contrast, timeless',
+    pairedWith: ['alegreya-sans'],
+    opentype: ['smcp', 'liga'],
+  },
+  {
+    id: 'crimson-pro', name: 'Crimson Pro', family: 'Crimson Pro', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Crimson+Pro:wght@200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Book-quality text serif — elegant, readable, scholarly character',
+    pairedWith: ['nunito-sans', 'figtree'],
+  },
+  {
+    id: 'domine', name: 'Domine', family: 'Domine', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Domine:wght@400;500;600;700',
+    previewWeight: 700, weights: [400, 500, 600, 700],
+    description: 'Screen-optimized serif — robust, clear, excellent web body text',
+  },
+  {
+    id: 'noto-serif', name: 'Noto Serif', family: 'Noto Serif', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Noto+Serif:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Google\'s universal serif — global coverage, harmonious proportions',
+  },
+  {
+    id: 'pt-serif', name: 'PT Serif', family: 'PT Serif', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'PT+Serif:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Paratype\'s transitional serif — classical, authoritative, wide language support',
+  },
+  {
+    id: 'yrsa', name: 'Yrsa', family: 'Yrsa', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Yrsa:wght@300;400;500;600;700',
+    previewWeight: 700, weights: [300, 400, 500, 600, 700],
+    description: 'Based on Heuristica — open, warm, literary personality',
+  },
+  // ── New additions ──
+  {
+    id: 'gloock', name: 'Gloock', family: 'Gloock', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Gloock',
+    previewWeight: 400, weights: [400],
+    description: 'High-contrast editorial serif — sharp, contemporary, magazine quality',
+  },
+  {
+    id: 'young-serif', name: 'Young Serif', family: 'Young Serif', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Young+Serif',
+    previewWeight: 400, weights: [400],
+    description: 'Neoclassical humanist serif — refined, bookish, warm personality',
+  },
+  {
+    id: 'newsreader', name: 'Newsreader', family: 'Newsreader', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Newsreader:wght@200;300;400;500;600;700;800',
+    previewWeight: 700, weights: [200, 300, 400, 500, 600, 700, 800],
+    description: 'High-performance editorial — optical sizes, newspaper heritage',
+  },
+  {
+    id: 'tinos', name: 'Tinos', family: 'Tinos', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Tinos:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Metrically compatible with Times New Roman — efficient, trusted, universal',
+  },
+  {
+    id: 'literata', name: 'Literata', family: 'Literata', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Literata:wght@200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Google\'s ebook typeface — optimized for long-form reading, optical variable',
+  },
+  {
+    id: 'gentium-plus', name: 'Gentium Plus', family: 'Gentium Plus', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Gentium+Plus:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Humanist text serif — exceptional multilingual support, scholarly warmth',
+  },
+  {
+    id: 'piazzolla', name: 'Piazzolla', family: 'Piazzolla', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Piazzolla:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Named after the tango composer — optical variable, dramatic contrast, literary depth',
+    opentype: ['opsz'],
+  },
+  {
+    id: 'proza-libre', name: 'Proza Libre', family: 'Proza Libre', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Proza+Libre:wght@400;500;600;700;800',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800],
+    description: 'Humanist text serif — designed for body text, open counters, excellent readability',
+  },
+  {
+    id: 'martel', name: 'Martel', family: 'Martel', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Martel:wght@200;300;400;600;700;800;900',
+    previewWeight: 700, weights: [200, 300, 400, 600, 700, 800, 900],
+    description: 'Devanagari-influenced book serif — structured, warm, broad language support',
+  },
+  {
+    id: 'lustria', name: 'Lustria', family: 'Lustria', category: 'serif', source: 'google',
+    group: 'text-serif',
+    googleFamily: 'Lustria',
+    previewWeight: 400, weights: [400],
+    description: 'Modern transitional serif — clean, crisp, contemporary editorial style',
+  },
+];
+
+// ══════════════════════════════════════════════════════════
+//  SLAB SERIF — Square serifs, industrial authority
+// ══════════════════════════════════════════════════════════
+export const SLAB_SERIF: FontConfig[] = [
+  {
+    id: 'zilla-slab', name: 'Zilla Slab', family: 'Zilla Slab', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Zilla+Slab:wght@300;400;500;600;700',
+    previewWeight: 700, weights: [300, 400, 500, 600, 700],
+    description: 'Mozilla\'s typeface — slab serif with modern geometric structure',
+    pairedWith: ['libre-franklin', 'cabin'],
+  },
+  {
+    id: 'bitter', name: 'Bitter', family: 'Bitter', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Bitter:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Designed for e-readers — sturdy slab, excellent screen readability',
+  },
+  {
+    id: 'arvo', name: 'Arvo', family: 'Arvo', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Arvo:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Geometric slab serif — strong, clear, confident personality',
+  },
+  {
+    id: 'roboto-slab', name: 'Roboto Slab', family: 'Roboto Slab', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Roboto+Slab:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Slab companion to Roboto — structured, reliable, wide weight range',
+    pairedWith: ['roboto'],
+  },
+  {
+    id: 'rokkitt', name: 'Rokkitt', family: 'Rokkitt', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Rokkitt:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Sturdy slab serif — friendly, readable, excellent for headings',
+  },
+  {
+    id: 'patua-one', name: 'Patua One', family: 'Patua One', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Patua+One',
+    previewWeight: 400, weights: [400],
+    description: 'Bold display slab — fun, retro, strongly impactful at large sizes',
+  },
+  {
+    id: 'alfa-slab-one', name: 'Alfa Slab One', family: 'Alfa Slab One', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Alfa+Slab+One',
+    previewWeight: 400, weights: [400],
+    description: 'Ultra-heavy slab display — maximum weight, bold graphic statement',
+  },
+  // ── New additions ──
+  {
+    id: 'crete-round', name: 'Crete Round', family: 'Crete Round', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Crete+Round:wght@400;700',
+    previewWeight: 400, weights: [400, 700],
+    description: 'Slab with rounded terminals — friendly authority, approachable editorial',
+  },
+  {
+    id: 'josefin-slab', name: 'Josefin Slab', family: 'Josefin Slab', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Josefin+Slab:wght@100;200;300;400;500;600;700',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700],
+    description: 'Geometric slab companion to Josefin Sans — elegant, fashion-conscious',
+  },
+  {
+    id: 'kameron', name: 'Kameron', family: 'Kameron', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Kameron:wght@400;500;600;700',
+    previewWeight: 700, weights: [400, 500, 600, 700],
+    description: 'Sturdy, condensed slab — strong personality, works well at display size',
+  },
+  {
+    id: 'eczar', name: 'Eczar', family: 'Eczar', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Eczar:wght@400;500;600;700;800',
+    previewWeight: 700, weights: [400, 500, 600, 700, 800],
+    description: 'Multi-script slab serif — bold display personality, broad language support',
+  },
+  {
+    id: 'slabo-27px', name: 'Slabo 27px', family: 'Slabo 27px', category: 'serif', source: 'google',
+    group: 'slab-serif',
+    googleFamily: 'Slabo+27px',
+    previewWeight: 400, weights: [400],
+    description: 'Pixel-optimized slab — designed specifically for 27px screen rendering',
+  },
+];
+
+// ══════════════════════════════════════════════════════════
+//  EDITORIAL SERIF — Optical, expressive, brand-forward
+// ══════════════════════════════════════════════════════════
+export const EDITORIAL_SERIF: FontConfig[] = [
+  {
+    id: 'fraunces', name: 'Fraunces', family: 'Fraunces', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Fraunces:wght@100;200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Optical variable — "wonky" axis, literary warmth, awards multiple recognitions',
+    pairedWith: ['commissioner', 'manrope'],
+    opentype: ['opsz', 'wght', 'SOFT', 'WONK'],
+  },
+  {
+    id: 'biorhyme', name: 'BioRhyme', family: 'BioRhyme', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'BioRhyme:wght@200;300;400;700;800',
+    previewWeight: 700, weights: [200, 300, 400, 700, 800],
+    description: 'Expressive display serif — distinctive, eye-catching at large sizes',
+  },
+  {
+    id: 'instrument-serif', name: 'Instrument Serif', family: 'Instrument Serif', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Instrument+Serif',
+    previewWeight: 400, weights: [400],
+    description: 'Designed to pair with Instrument Sans — confident display serif',
+    pairedWith: ['instrument-sans', 'dm-sans'],
+  },
+  {
+    id: 'inria-serif', name: 'Inria Serif', family: 'Inria Serif', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Inria+Serif:wght@300;400;700',
+    previewWeight: 700, weights: [300, 400, 700],
+    description: 'Commissioned by INRIA — academic elegance, nuanced contrast',
+    pairedWith: ['inria-sans'],
+  },
+  {
+    id: 'ibarra-real-nova', name: 'Ibarra Real Nova', family: 'Ibarra Real Nova', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Ibarra+Real+Nova:wght@400;500;600;700',
+    previewWeight: 700, weights: [400, 500, 600, 700],
+    description: 'Revival of a Spanish royal typeface — historical, refined, distinctive',
+  },
+  // ── New additions ──
+  {
+    id: 'dm-serif-text', name: 'DM Serif Text', family: 'DM Serif Text', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'DM+Serif+Text',
+    previewWeight: 400, weights: [400],
+    description: 'Body text companion to DM Serif Display — warm, editorial, highly readable',
+    pairedWith: ['dm-sans', 'dm-serif-display'],
+  },
+  {
+    id: 'alike', name: 'Alike', family: 'Alike', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Alike',
+    previewWeight: 400, weights: [400],
+    description: 'Humanist transitional serif — friendly optical personality, approachable',
+  },
+  {
+    id: 'gravitas-one', name: 'Gravitas One', family: 'Gravitas One', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Gravitas+One',
+    previewWeight: 400, weights: [400],
+    description: 'Heavy display serif with ink traps — dramatic, editorial, commanding',
+  },
+  {
+    id: 'libre-caslon-text', name: 'Libre Caslon Text', family: 'Libre Caslon Text', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Libre+Caslon+Text:wght@400;700',
+    previewWeight: 700, weights: [400, 700],
+    description: 'Open-source Caslon revival — classical Anglo-American elegance, timeless',
+  },
+  {
+    id: 'libre-caslon-display', name: 'Libre Caslon Display', family: 'Libre Caslon Display', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Libre+Caslon+Display',
+    previewWeight: 400, weights: [400],
+    description: 'Display counterpart to Libre Caslon Text — airy, expressive at large sizes',
+  },
+  {
+    id: 'marcellus', name: 'Marcellus', family: 'Marcellus', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Marcellus',
+    previewWeight: 400, weights: [400],
+    description: 'Latin-inspired small caps display serif — monumental, engraved, authoritative',
+  },
+  {
+    id: 'cormorant-sc', name: 'Cormorant SC', family: 'Cormorant SC', category: 'serif', source: 'google',
+    group: 'editorial-serif',
+    googleFamily: 'Cormorant+SC:wght@300;400;500;600;700',
+    previewWeight: 600, weights: [300, 400, 500, 600, 700],
+    description: 'Small caps variant of Cormorant — elevated, typographic sophistication',
+  },
+];
+
+// ══════════════════════════════════════════════════════════
+//  IBM PLEX FAMILY — Systematic, coherent super-family
+// ══════════════════════════════════════════════════════════
+export const IBM_PLEX_FAMILY: FontConfig[] = [
+  {
+    id: 'ibm-plex-sans', name: 'IBM Plex Sans', family: 'IBM Plex Sans', category: 'sans', source: 'google',
+    group: 'ibm-plex-family',
+    googleFamily: 'IBM+Plex+Sans:wght@100;200;300;400;500;600;700',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700],
+    description: 'IBM\'s typeface — technical precision with human warmth',
+    pairedWith: ['ibm-plex-serif', 'ibm-plex-mono'],
+  },
+  {
+    id: 'ibm-plex-sans-condensed', name: 'IBM Plex Sans Condensed', family: 'IBM Plex Sans Condensed', category: 'sans', source: 'google',
+    group: 'ibm-plex-family',
+    googleFamily: 'IBM+Plex+Sans+Condensed:wght@100;200;300;400;500;600;700',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700],
+    description: 'IBM Plex condensed — space-efficient, systematic identity',
+    pairedWith: ['ibm-plex-serif', 'ibm-plex-sans'],
+  },
+  {
+    id: 'ibm-plex-serif', name: 'IBM Plex Serif', family: 'IBM Plex Serif', category: 'serif', source: 'google',
+    group: 'ibm-plex-family',
+    googleFamily: 'IBM+Plex+Serif:wght@100;200;300;400;500;600;700',
+    previewWeight: 700, weights: [100, 200, 300, 400, 500, 600, 700],
+    description: 'IBM Plex family serif — systematic, technical warmth',
+    pairedWith: ['ibm-plex-sans', 'ibm-plex-mono'],
+  },
+];
+
+// ── Source Serif (part of Source family, shown in serif context) ──
+export const SOURCE_SERIF: FontConfig[] = [
+  {
+    id: 'source-serif-4', name: 'Source Serif 4', family: 'Source Serif 4', category: 'serif', source: 'google',
+    group: 'source-family',
+    googleFamily: 'Source+Serif+4:wght@200;300;400;500;600;700;800;900',
+    previewWeight: 700, weights: [200, 300, 400, 500, 600, 700, 800, 900],
+    description: 'Adobe\'s serif workhorse — highly readable, variable, versatile',
+    pairedWith: ['source-sans-3', 'inter'],
+    opentype: ['smcp', 'onum'],
+  },
+];
+
+export const SERIFS: FontConfig[] = [
+  ...DISPLAY_SERIF,
+  ...TEXT_SERIF,
+  ...SLAB_SERIF,
+  ...EDITORIAL_SERIF,
+  ...IBM_PLEX_FAMILY,
+  ...SOURCE_SERIF,
+];
